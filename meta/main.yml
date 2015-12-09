@@ -1,0 +1,15 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: geerlingguy
+  description: Configures a Raspberry Pi.
+  company: "Midwestern Mac, LLC"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.4
+  platforms:
+  - name: Debian
+    versions:
+    - all
+  categories:
+    - system
