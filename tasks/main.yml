@@ -1,1 +1,18 @@
 ---
+- name: Configure options in /boot/config.txt.
+  lineinfile:
+    dest: /boot/config.txt
+    regexp: "{{ item.regexp }}"
+    line: "{{ item.line }}"
+    insertafter: EOF
+    state: present
+  with_items: raspberry_pi_boot_config_options
+
+- name: Configure options in /etc/rc.local.
+  lineinfile:
+    dest: /etc/rc.local
+    regexp: "{{ item.regexp }}"
+    line: "{{ item.line }}"
+    insertbefore: "^exit"
+    state: present
+  with_items: raspberry_pi_rc_local_options
