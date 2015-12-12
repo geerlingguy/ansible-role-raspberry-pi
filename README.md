@@ -4,7 +4,7 @@
 
 Configures a Raspberry Pi (running Raspbian).
 
-Note that while this role will reconfigure certain options in the Raspberry Pi configuration files, it will not automatically _restart_ the Pi to make all the changes take effect. For most changes, you'll need to make sure to reboot your Pi(s) after this role runs.
+This role will reconfigure certain options in the Raspberry Pi configuration files, but will not automatically _restart_ the Pi to make all the changes take effect. For most changes, you'll need to make sure to reboot your Pi(s) after this role runs.
 
 ## Requirements
 
