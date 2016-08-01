@@ -6,7 +6,7 @@ galaxy_info:
   description: Configures a Raspberry Pi.
   company: "Midwestern Mac, LLC"
   license: "license (BSD, MIT)"
-  min_ansible_version: 1.8
+  min_ansible_version: 1.9
   platforms:
     - name: Debian
       versions:
