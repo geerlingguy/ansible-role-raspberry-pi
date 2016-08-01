@@ -6,7 +6,7 @@
     line: "{{ item.line }}"
     insertafter: EOF
     state: present
-  with_items: "{{ raspberry_pi_boot_config_options}} "
+  with_items: "{{ raspberry_pi_boot_config_options }}"
 
 - name: Configure options in /etc/rc.local.
   lineinfile:
@@ -15,4 +15,4 @@
     line: "{{ item.line }}"
     insertbefore: "^exit"
     state: present
-  with_items: " {{ raspberry_pi_rc_local_options }} "
+  with_items: "{{ raspberry_pi_rc_local_options }}"
