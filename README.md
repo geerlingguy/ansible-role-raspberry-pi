@@ -1,6 +1,6 @@
 # Ansible Role: Raspberry Pi
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-raspberry-pi.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-raspberry-pi)
+[![Build Status](https://travis-ci.com/geerlingguy/ansible-role-raspberry-pi.svg?branch=master)](https://travis-ci.com/geerlingguy/ansible-role-raspberry-pi)
 
 Configures a Raspberry Pi (running Raspbian).
 
