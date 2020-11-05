@@ -12,7 +12,7 @@ galaxy_info:
   platforms:
     - name: Debian
       versions:
-      - all
+        - all
   galaxy_tags:
     - system
     - raspberry
