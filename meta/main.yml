@@ -2,8 +2,7 @@
 dependencies: []
 
 galaxy_info:
-  # See: https://github.com/ansible/galaxy/issues/2393
-  # role_name: raspberry-pi
+  role_name: raspberry-pi
   author: geerlingguy
   description: Configures a Raspberry Pi.
   company: "Midwestern Mac, LLC"
