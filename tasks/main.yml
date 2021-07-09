@@ -16,3 +16,10 @@
     insertbefore: "^exit"
     state: present
   with_items: "{{ raspberry_pi_rc_local_options }}"
+
+- name: Configure options in /boot/cmdline.txt
+  replace:
+    path: /boot/cmdline.txt
+    regexp: '^([\w](?!.*\b{{ item }}\b).*)$'
+    replace: '\1 {{ item }}'
+  with_items: "{{ raspberry_pi_boot_cmdline_options }}"
