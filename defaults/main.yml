@@ -11,3 +11,5 @@ raspberry_pi_rc_local_options:
   # Disable HDMI on startup (for power savings).
   - regexp: "^/usr/bin/tvservice"
     line: "/usr/bin/tvservice -o"
+
+raspberry_pi_boot_cmdline_options: []
