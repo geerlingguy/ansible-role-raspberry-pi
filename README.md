@@ -1,6 +1,6 @@
 # Ansible Role: Raspberry Pi
 
-[![CI](https://github.com/geerlingguy/ansible-role-raspberry-pi/workflows/CI/badge.svg?event=push)](https://github.com/geerlingguy/ansible-role-raspberry-pi/actions?query=workflow%3ACI)
+[![CI](https://github.com/geerlingguy/ansible-role-raspberry-pi/actions/workflows/ci.yml/badge.svg)](https://github.com/geerlingguy/ansible-role-raspberry-pi/actions/workflows/ci.yml)
 
 Configures a Raspberry Pi (running Raspbian).
 
