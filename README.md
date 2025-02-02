@@ -31,6 +31,10 @@ Use Ansible's `lineinfile` module to ensure certain settings are configured insi
 
 Use Ansible's `lineinfile` module to ensure certain settings are configured inside `/etc/rc.local`.
 
+    raspberry_pi_boot_cmdline_options: []
+
+Use Ansible's `replace` module to ensure certain settings are configured inside `/boot/cmdline.txt`.
+
 ## Dependencies
 
 None.
@@ -40,6 +44,10 @@ None.
     - hosts: pi
       vars_files:
         - vars/main.yml
+      vars:
+        raspberry_pi_boot_cmdline_options:
+          # Disable IPv6 during boot
+          - "ipv6.disable=1"
       roles:
         - { role: geerlingguy.raspberry-pi }
 
