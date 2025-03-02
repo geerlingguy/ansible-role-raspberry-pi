@@ -8,7 +8,25 @@
     state: present
   with_items: "{{ raspberry_pi_boot_config_options }}"
 
-- name: Configure options in /etc/rc.local.
+- name: Ensure /etc/rc.local exists
+  copy:
+    dest: /etc/rc.local
+    content: |
+      #!/bin/sh -e
+      #
+      # rc.local
+      #
+      # This script is executed at the end of each multiuser runlevel.
+      # Make sure that the script will "exit 0" on success or any other
+      # value on error.
+      #
+      # By default this script does nothing.
+
+      exit 0
+    mode: '0755'
+    force: no
+
+- name: Configure options in /etc/rc.local
   lineinfile:
     dest: /etc/rc.local
     regexp: "{{ item.regexp }}"
