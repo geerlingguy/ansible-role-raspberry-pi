@@ -1,7 +1,7 @@
 ---
-- name: Configure options in /boot/config.txt.
+- name: Configure options in /boot/firmware/config.txt.
   lineinfile:
-    dest: /boot/config.txt
+    dest: /boot/firmware/config.txt
     regexp: "{{ item.regexp }}"
     line: "{{ item.line }}"
     insertafter: EOF
